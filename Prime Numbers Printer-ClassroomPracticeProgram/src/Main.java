@@ -1,41 +1,39 @@
+
 import java.util.Scanner;
 
 public class Main {
 
-	 public static void printPrimes(int n) {
-	        int count = 0;
-	        int num = 2; // Start checking for prime numbers from 2
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		printPrime(n);
 
-	        while (count < n) {
-	            if (isPrime(num)) {
-	                System.out.print(num + " ");
-	                count++;
-	            }
-	            num++;
-	        }
-	    }
+	}
+	
+	public static void printPrime(int n) {
+		int count=0;
+		for(int i=2;count<n;i++) {
+			boolean res= checkPrime(i);
+			if(res==true)
 
-	    public static boolean isPrime(int num) {
-	        if (num <= 1) {
-	            return false;
-	        }
-	        for (int i = 2; i <= Math.sqrt(num); i++) {
-	            if (num % i == 0) {
-	                return false;
-	            }
-	        }
-	        return true;
-	    }
+			{
 
-	    public static void main(String[] args) {
-	        Scanner scan = new Scanner(System.in);
+			System.out.print(i+" ");
 
-	        System.out.print("Enter the value of n: ");
-	        int n = scan.nextInt();
+			count++;
 
-	        printPrimes(n); // Call the function to print the first 'n' prime numbers
-
-	        scan.close();
-	    }
+			}
+		}
+		
+	}
+	
+	public static boolean checkPrime(int n) {
+		for(int i=2; i<n; i++) {
+			if(n%i==0) {
+				return false;
+			}
+		}
+		return true;
+	}
 
 }
