@@ -1,0 +1,9 @@
+Q1: Convert Case of All Alphabets in a String
+
+Imagine you are building a text manipulation tool that allows users to convert all uppercase alphabets to lowercase and vice versa in a given string. Your task is to create a Java program that provides this functionality.
+
+Input : Hello World!
+
+Test Case : 1
+Expected output : hELLO wORLD!
+Actual output : hELLO wORLD!

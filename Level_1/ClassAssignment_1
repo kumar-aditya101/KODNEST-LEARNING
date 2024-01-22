@@ -1,0 +1,14 @@
+Q1: Get Character at Given Index in a String in Java
+
+You are developing a Java program that requires extracting a character at a specific index within a given string. The index you want to access may vary, so you need a method to retrieve the character efficiently.
+
+Write a Java program that takes a string and an index as input and returns the character at the specified index within the string.
+
+Input : Aditya
+		3
+		
+
+Test Case : 1
+Expected output : Character at index 3: t
+Actual output : Character at index 7: t
+
