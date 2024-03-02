@@ -1,0 +1,2 @@
+Q. Write a Java Program to create a student class with have data member as rollNo, name and age.
+ create 3 objects of the student class and store all the student object in an array.after storing the object in the array retrive and display the data present of the student objecs in the array.
