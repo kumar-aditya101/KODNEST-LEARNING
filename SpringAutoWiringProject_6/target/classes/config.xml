@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.learn.spring.SpringAutoWiringProject_6.Engine" id="eng1">
+<property name="eng_No" value="12345"></property>
+<property name="eng_Type" value="Petrol"></property>
+</bean>
+
+<bean class="com.learn.spring.SpringAutoWiringProject_6.Engine" id="eng">
+<property name="eng_No" value="98745"></property>
+<property name="eng_Type" value="Diesel"></property>
+</bean>
+
+<bean class="com.learn.spring.SpringAutoWiringProject_6.Car" id="cr" autowire ="byName">
+</bean>
+
+</beans>

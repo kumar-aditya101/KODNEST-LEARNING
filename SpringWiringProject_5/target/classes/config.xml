@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.learn.spring.SpringWiringProject5.Mobile" id="mob1">
+<property name="brand" value="MI"></property>
+<property name="cost" value="15000"></property>
+<property name="ram" value="6"></property>
+</bean>
+
+<bean class="com.learn.spring.SpringWiringProject5.Person" id="Per">
+<property name="m" ref="mob1"></property>
+
+</bean>
+
+</beans>

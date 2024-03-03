@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- Achieving auto-wiring using ByType -->
+<bean class= "com.learn.spring.SpringAutoWiringProject_7.College" id="coll" autowire="byType">
+</bean>
+
+<bean class="com.learn.spring.SpringAutoWiringProject_7.Professor" id="prof">
+<property name="prId" value="12345"></property>
+<property name="prName" value="PunithSir"></property>
+<property name="prSubject" value="Java"></property>
+</bean>
+</beans>

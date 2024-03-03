@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class ="com.learn.spring.SpringProject3.Employee" id="emp">
+
+<property name="technologies">
+	<list>
+		<value>Java</value>
+		<value>Python</value>
+		<value>SQL</value>
+	</list>
+</property>
+
+<property name="project">
+	<set>
+		<value>project-1</value>
+		<value>project-2</value>
+		<value>project-3</value>
+	</set>
+</property>
+
+<property name="companies">
+	<map>
+		<entry key="121" value="XYZ"></entry>
+		<entry key="123" value="PQR"></entry>
+	</map>
+
+</property>
+
+</bean>
+
+</beans>

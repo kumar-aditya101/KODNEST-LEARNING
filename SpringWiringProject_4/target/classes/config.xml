@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="com.learn.spring.SpringProject4.Employee" id="emp1">
+<property name="empId" value="13"></property>
+<property name="empName" value="Sumit"></property>
+<property name="empSalary" value="50000"></property>
+</bean>
+
+<bean class="com.learn.spring.SpringProject4.Employee" id="emp2">
+<property name="empId" value="15"></property>
+<property name="empName" value="Sanu"></property>
+<property name="empSalary" value="30000"></property>
+</bean>
+
+<bean class="com.learn.spring.SpringProject4.CompanyXYZ" id="cmp">
+<property name="e" ref="emp1"></property>
+</bean>
+
+</beans>
